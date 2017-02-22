@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>     <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]>        <html class="no-js lt-ie9 lt-ie8" lang="en-US" prefix="og: http://ogp.me/ns#">       <![endif]-->
+<!--[if IE 8]>        <html class="no-js lt-ie9" lang="en-US" prefix="og: http://ogp.me/ns#">              <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--                               <![endif]-->
+<!--[if !IE]><!--><script>if (/*@cc_on!@*/false) { document.documentElement.className+=' lt-ie10'; }</script><!--<![endif]-->
+    <head>
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Lang" content="en">
+        <meta name="author" content="SW-THEMES">
+        <meta http-equiv="Reply-to" content="swtheme@gmail.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="description" content="Documentation for Porto - Ultimate Responsive OpenCart Theme">
+        <meta name="keywords" content="Responsive,OpenCart,Theme,Documentation">
+        <meta name="creation-date" content="09/20/2016">
+        
+        <title>Porto OpenCart Theme Documentation</title>
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        
+        <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Lato" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+        <script src="assets/vendor/jquery/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/vendor/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/js/script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="header-container">
+            <div class="container">
+                <a href="#" title="Porto - Premium Responsive OpenCart Theme" class="logo">
+                    <img src="assets/images/logo.png" alt="Porto - Premium Responsive OpenCart Theme"/>
+                </a>
+                <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#main-nav-container" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="main-nav-container">
+                    <ul class="main-nav nav">
+                        <li class="has-children"><a href="javascript:void(0)" class="open-child"><i class="fa fa-plus-square-o"></i></a>
+                            <a href="#general" title="General">General<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li><a href="#gettingstarted">Getting Started</a></li>
+                                <li class="has-children"><a href="javascript:void(0)" class="open-child"><i class="fa fa-plus-square-o"></i></a>
+                                    <a href="#installationupdate">Installation<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    <ul>
+                                        <li><a href="#OpenCartinstallation">OpenCart Installation</a></li>
+                                        <li><a href="#themeinstallation">Theme Installation</a></li>
+                                        <li><a href="#themeactivation">Theme Activation</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#themeconfiguration">Theme Configuration</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children"><a href="javascript:void(0)" class="open-child"><i class="fa fa-plus-square-o"></i></a>
+                            <a href="#adminoptions" title="Admin Options">Admin Options<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li><a href="#portodesignpanel">Porto Design Panel</a></li>
+                                <li><a href="#portosettingspanel">Porto Settings Panel</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children"><a href="javascript:void(0)" class="open-child"><i class="fa fa-plus-square-o"></i></a>
+                            <a href="#extensions" title="Extensions">Extensions<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li class="has-children"><a href="javascript:void(0)" class="open-child"><i class="fa fa-plus-square-o"></i></a>
+                                    <a href="#obestextensions">Obest Extensions<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    <ul>
+                                        <li><a href="#advancedgrid">Advanced Grid</a></li>
+                                        <li><a href="#blog">Blog</a></li>
+                                        <li><a href="#breadcrumbbackground">Breadcrumb background</a></li>
+                                        <li><a href="#cameraslider">Camera slider</a></li>
+                                        <li><a href="#cookie">Cookie</a></li>
+                                        <li><a href="#custommodule">Custom Module</a></li>
+                                        <li><a href="#filterproducts">Filter Products</a></li>
+                                        <li><a href="#faq">Faq</a></li>
+                                        <li><a href="#fullscreenbackgroundslider">Fullscreen background slider</a></li>
+                                        <li><a href="#megamenu">MegaMenu</a></li>
+                                        <li><a href="#headernotice">Header Notice</a></li>
+                                        <li><a href="#productblocks">Product Blocks</a></li>
+                                        <li><a href="#popup">Popup</a></li>
+                                        <li><a href="#productquestion">Product Question</a></li>
+                                        <li><a href="#producttabs">Product Tabs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children"><a href="javascript:void(0)" class="open-child"><i class="fa fa-plus-square-o"></i></a>
+                                    <a href="#compatibleextensions">Compatible Extensions<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    <ul>
+                                        <li><a href="#quickcheckout">Quick Checkout</a></li>
+                                        <li><a href="#megafilterpro">Mega Filter PRO</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children"><a href="javascript:void(0)" class="open-child"><i class="fa fa-plus-square-o"></i></a>
+                            <a href="#others" title="Others">Others<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li><a href="#faq">Frequently Asked Questions</a></li>
+                                <li><a href="#supportcustomization">Support & Customization</a></li>
+                                <li><a href="#changelog">Change Log</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://themeforest.net/item/porto-ecommerce-ultimate-OpenCart-theme/9725864?ref=ilistheme&from=selectpage" title="Purchase Now" target="_blank">Purchase Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main-container">
+            <div class="container">
+                <section id="general">
+                    <div class="main-content">
+                        <div id="gettingstarted">
+                            <h3>Getting Started</h3>
+                            <div class="sub-content">
+                                <h6>Welcome to Porto OpenCart Theme!</h6>
+                                <div class="content-body">
+                                    <p>We would like to thank you for purchasing Porto OpenCart Theme! We are very pleased you have chosen Porto OpenCart Theme(or interested in <i class="fa fa-smile-o emoticon" aria-hidden="true"></i>) for your website, you will be never disappointed! Before you get started, please be sure to always check out this documentation. We outline all kinds of good information, and provide you with all the details you need to use Porto OpenCart Theme. Porto can only be used with OpenCart 2.x and we assume that you already have OpenCart installed and ready to go.</p>
+                                    <p>If you are unable to find your answer here in our documentation, we encourage you to contact us through themeforest  item <a href="https://themeforest.net/item/porto-ultimate-responsive-OpenCart-theme/9725864/support" target="_blank"><span class="highlight">support page</span></a> with your site CPanel(or FTP) and OpenCart admin details. We're very happy to help you and you will get reply from us more faster than you expected. Thank you, we hope you to enjoy using Porto OpenCart Theme!</p>
+                                </div>
+                                <h6>Compatible with OpenCart:</h6>
+                                <div class="content-body">
+                                    <p>Porto OpenCart Theme is fully compatible with OpenCart Community Edition 2.1.x, 2.2.x and 2.3.x.</p>
+                                </div>
+                                <h6>OpenCart Information</h6>
+                                <div class="content-body">
+                                    <p>To install this theme you must have a working version of OpenCart already installed. If you need help installing OpenCart, follow below sites and tutorials from OpenCart.com, hope everything that you need are there.</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul class="li-ct">
+                                                <li><a href="http://docs.opencart.com/installation/" target="blank"><span class="highlight">Installation Guide</span></a> - Installation guide that describes how to install OpenCart.</li>
+                                                <li><a href="http://docs.opencart.com/installation/" target="blank"><span class="highlight">Online OpenCart guide</span></a> - Online OpenCart documentation that describes about OpenCart in detail.</li>
+                                                <li><a href="https://forum.opencart.com/" target="blank"><span class="highlight">OpenCart Forum</span></a> - OpenCart forum site.</li>
+                                                <li><a href="http://stackoverflow.com/questions/tagged/OpenCart" target="blank"><span class="highlight">stackoverflow.com</span></a> - You can also get some useful articles from stackoverflow.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p style="text-align: center"><img src="assets/images/opencart-logo.png"/></p>
+                                        </div>
+                                    </div>                                            
+                                </div>
+                            </div>
+                        </div>
+                        <div id="installationupdate">
+                            <h3>Installation & Update</h3>
+                            <div class="sub-content">
+                                <div id="OpenCartinstallation">
+                                    <h4>OpenCart Installation</h4>
+                                    <div class="sub-sub-content">
+                                        <div class="content-body">
+                                            <p>Please refer this <a href="http://docs.opencart.com/installation/" target="_blank">Installation Guide</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="themeinstallation">
+                                    <h4>Theme Installation</h4>
+                                    <div class="sub-sub-content">
+                                    	<div class="content-body">
+                                    		<div class="alert alert-warning margin-top-bottom-5">
+                                    			<h4><i class="fa fa-warning"></i> Note!</h4>
+                                    			<p>You can also see video tutorial, which show how to use the same modules like presented in this documentation:<br>
+                                    			<a href="https://www.youtube.com/playlist?list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0" target="_blank">GO TO VIDEO TUTORIAL</a></p>
+                                    		</div>
+                                    		<div class="alert alert-warning margin-top-bottom-5">
+                                    			<p>Before you install our template, make sure you have installed and running the correct version of OpenCart.</p>
+                                    		</div>
+                                    		<div class="alert alert-warning margin-top-bottom-5">
+                                    			<p>Before you start uploading theme always backup all your files.</p>
+                                    		</div>
+                                    		
+                                    		<p>Upload files using your FTP Client (we recommend FileZilla) from our download package.</p>
+                                    		<p>In Files to Upload is folder with version of OpenCart. Open it and there are six folders: "Admin", "Catalog", "Data_sample", "Image", "System", "Themeinstall", like in your installation directory:</p>
+                                    		<p><img src="assets/images/image_1.png" class="doc-img" alt=""></p>
+                                    		<p>You will be asked if you want to overwrite some of the files from your current installation. Overwrite all files.</p>
+                                    		<p><img src="assets/images/image_2.png" class="doc-img" style="width: auto;" alt=""></p>
+                                    		<p>After this you have to upload the content of the folder Extra skins in the same way.</p>
+                                    		<p><img src="assets/images/image_3.png" class="doc-img" alt=""></p>
+                                    	</div>
+									</div>
+                                </div>
+                                <div id="themeactivation">
+                                    <h4>Theme Activation</h4>
+                                    <div class="sub-sub-content">
+                                    	<div class="content-body">
+											<p><b>Only for OpenCart 2.2.x-2.3.x</b>: In the admin panel go to the Extensions › Themes and in the settings of your store change the theme directory to porto.</p>
+                                    		<p><img src="assets/images/image_4.jpg" class="doc-img" alt=""></p>
+											<p><b>Only for OpenCart 2.1.x</b>: Go to OpenCart admin panel and activate the theme: System › Settings › Edit Store settings › Store tab › Template dropdown.</p>
+                                    		<p><img src="assets/images/image_5.jpg" class="doc-img" alt=""></p>
+                                    	</div>
+                                	</div>
+                                </div>
+                                <div id="themeinstall">
+                                    <h4>Theme Install</h4>
+                                	<div class="sub-sub-content">
+                                		<div class="content-body">
+                                			<p>Once you activate the Porto template and go on the homepage of your shop you will be automatically redirected to the address:<br>themeinstall/index.php</p>
+                                			<p>You will be informed about the correct installation of the template and at this point you will be able to come back to the main page of your shop. However, if you are being redirected to the address themeinstall/index.php every time or if strange mistakes appear on your page, you will have to add a few lines code manually to your file index.php located in the main folder of the template.</p>
+                                			<p><b>How to do it:</b></p>
+                                			<p>Open the file system/framework.php and find the 38th line of the code. Add the following code in the place showed below:</p>
+                                			<p><code>//Unlimited colors theme<br>
+                                			require_once(DIR_SYSTEM . 'library/themeoptions.php');<br>
+                                			$theme_options = new ThemeOptions();<br>
+                                			$registry->set('theme_options', $theme_options);</code></p>
+                                			<p>Save changes and upload the modified file: system/framework.php to the server.</p>
+                                    		<p><img src="assets/images/image_6.png" class="doc-img" alt=""></p>
+                                		</div>
+                                	</div>
+                                </div>
+                                <div id="imagessize">
+                                    <h4>Images Size</h4>
+                                	<div class="sub-sub-content">
+                                		<div class="content-body">
+                                			<p>With this theme you can set your own images size from admin panel. You don't need to edit CSS files.</p>
+                                			<p>If you want to customize sizes, go to the OpenCart admin panel and set image size in: System › Settings › Edit Store settings › Image tab</p>
+                                			<p>For the best look we recommend size in demo admin panel.</p>
+                                    		<p><img src="assets/images/image_7.png" class="doc-img" alt=""></p>
+                                    		<div class="alert alert-warning margin-top-bottom-5">Sizes images in modules: Advanced Grid, Blog, Filter Products you must set in the module settings!</div>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="themeconfiguration">
+                            <h3>Theme Configuration</h3>
+                            <div class="sub-content">
+                            	<p>If you want your site to look exactly like the demo version, then this bookmark is made just for you. Make sure you have completed all steps described at the Installation section. Then sign in to your administration panel of opencart. After that, go to the bookmark  Extensions -> Modules. You will see a few  modules names (in bold). They are listed below:</p>
+                            	<ul>
+                            		<li>Advanced Grid</li>
+                            		<li>Blog Category</li>
+                            		<li>Blog Latest Posts</li>
+                            		<li>Blog Management</li>
+                            		<li>Blog Popular Posts</li>
+                            		<li>Blog Popular Tags</li>
+                            		<li>Blog Product Related Posts</li>
+                            		<li>Blog Search</li>
+                            		<li>Camera slider</li>
+                            		<li>Carousel item</li>
+                            		<li>Category Wall</li>
+                            		<li>Cookie</li>
+                            		<li>Custom Module</li>
+                            		<li>FAQ</li>
+                            		<li>Filter product</li>
+                            		<li>Full screen background slider</li>
+                            		<li>Header Notice</li>
+                            		<li>Porto Theme Options</li>
+                            		<li>MegaMenu Manager Links</li>
+                            		<li>MegaMenu</li>
+                            		<li>Newsletter</li>
+                            		<li>Popup</li>
+                            		<li>Product blocks</li>
+                            		<li>Product tabs</li>
+                            	</ul>
+                            	<p>Next to each of module there is a add button, that you have to click to install the module. After install the module go to the edition of Porto Theme Options. You should see the image presented below:</p>
+                            	<p><img src="assets/images/image_8.png" class="doc-img" alt=""></p>
+                            	<p>From the list choose the skin you are interested in and press the button: Active skin.</p>
+                            	<p>On the left side you can see a list of tabs, click the Install data tab.</p>
+                            	<p><img src="assets/images/image_9.png" class="doc-img" alt=""></p>
+                            	<p>You have to Press Install button to install sample data each of listed modules. Once you install it your site should look almost identical as the demo version.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="adminoptions">
+                    <h2>Admin Options</h2>
+                    <div class="main-content">
+                        <div id="portodesignpanel">
+                            <h3>Porto Design Panel</h3>
+                            <div class="sub-content">
+                                <div class="sub-sub-content">
+                                    <h6>About Porto Design Panel</h6>
+                                    <div class="content-body">
+                                        <p>Porto eCommerce is equipped with administrative module which gives you the ability to configure the visual appearance of your store. You can change any colors for each elements by using color pirckers or by specifying color value manually.</p>
+                                        <p>You can also apply textures(patterns) for the main sections of the page.</p>
+                                        <p>Go to <code>Extensions > Modules > Porto Theme Options > Design</code> section to start your own design configuration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="portosettingspanel">
+                            <h3>Porto Settings Panel</h3>
+                            <div class="sub-content">
+                                <div class="sub-sub-content">
+                                    <h6>About Porto Settings Panel</h6>
+                                    <div class="content-body">
+                                        <p>Porto eCommerce is equipped with administrative module which gives you the ability to configure most of the functionality in powerful admin panel. Using this pwerful settings panel, you can configure your store easily without any coding.</p>
+                                        <p>Go to <code>Extensions > Modules > Porto Theme Options > General</code> section to start your own design configuration.</p>
+                                    </div>
+                                    <h6>Layout</h6>
+                                    <p><b>Layout Type</b>: You can choose boxed or wide layout of entire store.</p>
+                                    <p><b>Page Direction</b>: In this option, you can turn your store into Right to Left language mode for entire section.</p>
+                                    <p><b>Custom class</b>: In this option, you can add custom class to html element body.</p>
+                                    <p>&nbsp;</p>
+                                    <h6>Product</h6>
+                                    <p><b>Lazy loading images</b>: Lazy Load is delays loading of images in long web pages. Images outside of viewport are not loaded until user scrolls to them. </p>
+                                    <p><b>Sale badge</b>: You can show or hide "Sale" label.</p>
+                                    <p><b>New badge</b>: You can show or hide "New" label.</p>
+                                    <p><b>Previous next products buttons</b>: You can show or hide links for previous and next links in the right of product name.</p>
+                                    <p><b>Product image zoom</b>: You can enable or disable product zoom function.</p>
+                                    <p><b>Product image size</b>: You can change size of product image.</p>
+                                    <p><b>Product image additional</b>: You can change position of additional product images (left or bottom).</p>
+                                    <p><b>Product social share</b>: You can show or hide social share links.</p>
+                                    <p><b>Related products</b>: You can show or hide related products.</p>
+                                    <p><b>Add to cart sticky</b>: You can enable to show the addtocart sticky, when scrolling the page.</p>
+                                    <p><b>Type of product tabs</b>: You can change view of displaying product tabs.</p>
+                                    <p><b>Option radio style</b>: You can enable button style for radios in product page.</p>
+                                    <p><img src="assets/images/image_14.png" class="doc-img" style="width: auto;" alt=""></p>
+                                    <p><b>Option checkbox style</b>: You can enable button style for checkboxes in product page.</p>
+                                    <p><img src="assets/images/image_15.png" class="doc-img" style="width: auto;" alt=""></p>
+                                    <p><b>Product number per row</b>: You can change product number per row in product grid.</p>
+                                    <p><b>Product image effect</b>: You can enable swap image or zoom image effect in products.</p>
+                                    <p><b>Quickview</b>: You can Enable or Disable quickview feature.</p>
+                                    <p>&nbsp;</p>
+                                    <h6>Category</h6>
+                                    <p><b>Product grid number per row</b>: You can change number of products per row in grid view.</p>
+                                    <p><b>Default list/grid</b>: You can change default product view (list or grid).</p>
+                                    <p><b>Refine search style</b>: You can show or hide refine search style on category page.</p>
+                                    <p>&nbsp;</p>
+                                    <h6>Header</h6>
+                                    <p><b>Fixed header</b>: You can Enable or Disable fixed header feature.</p>
+                                    <p><b>Header type</b>: You can change header type.</p>
+                                    <p>&nbsp;</p>
+                                    <h6>Footer badge</h6>
+                                    <p>You can show or hide footer badge and you can translate text of footer badge in here.</p>
+                                    <p>&nbsp;</p>
+                                    <h6>Translations</h6>
+                                    <p>You can translate some strings in here.</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                </section>
+                <section id="extensions">
+                    <h2>Extensions</h2>
+                    <div class="main-content">
+                        <div id="obestextensions">
+                            <h3>Obest Extensions</h3>
+                            <div class="sub-content">
+								<div id="advancedgrid">
+								    <h4>Advanced Grid</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>Advanced Grid is sophisticated module, that allows you create various grids with custom templates and advanced configuration. There are several type of data that u can embed here (HTML, Box, Links, Products, Newsletter, Latest Blog). You can also load another module as the element of the grid. It is very easy and allow creating awesome advanced sections.</p>
+								            <div class="row">
+								            	<div class="col-sm-6">
+								            		<h5><strong>General settings</strong></h5>
+								            		<p>
+								            			<b>Add custom class:</b> You can add here your own class to main element which contains all content of this module.
+								            		</p>
+								            		<p>
+								            			<b>Margins:</b> You can add margins here.
+								            		</p>
+								            		<p>
+								            			<b>Paddings:</b> Here you can add paddings (space) for module's content.
+								            		</p>
+								            		<p>
+								            			<b>Force full width:</b> Here you can decide if background of the module should extend over the entire page or should be equal with content of the page.
+								            		</p>
+								            		<p>
+								            			<b>Background color, image, position, repeat, attachment:</b> In these fields you can configure background of the module. 
+								            		</p>
+								            		<h5><br><strong>Layout settings</strong></h5>
+								            		<p>You can find here several fields which allow you to decide where the module will be placed on your page.</p>
+								            		<h5><br><strong>Column settings</strong></h5>
+								            		<p>
+								            			<b>Column width:</b> You can set a width of column. For example option: 6/12 sets your column width to 50%
+								            		</p>
+								            		<p>
+								            			<b>Disable on mobile:</b> You can show or hide module on mobile version.
+								            		</p>
+								            		<p>
+								            			<b>Sort:</b> Here you can configure order of display columns.
+								            		</p>
+								            		<h5><br><strong>Add modules to the column</strong></h5>
+								            		<p>Here you can add an unlimited number of modules for the selected column. In each module you can add your own html content, box, links, products, newsletter, recent news or include external module. You can also change display order.</p>
+								            	</div>
+								            	
+								            	<div class="col-sm-6">
+								            		<p><img class="doc-img" src="assets/images/image_10.png"></p>
+								            	</div>
+								            </div>
+								            
+								            <p><br><a href="https://www.youtube.com/watch?v=xYTqL-re_TE&index=2&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="blog">
+								    <h4>Blog</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>Blog is powerful module, allow you add articles, categories, manage autthors and moderate comments. Moreover it give you advanced configuration to customize its features in many ways.</p>
+								            <p>Blog module consist of:</p>
+								            <ul>
+								            	<li><b>Blog Management</b> - main module where you can manage everything</li>
+								            	<li><b>Blog Category</b> - display list of availables categories</li>
+								            	<li><b>Blog Latest Posts</b> - display list of latest articles</li>
+								            	<li><b>Blog Popular Posts</b> - display list of popular articles</li>
+								            	<li><b>Blog Popular Tags</b> - display tag cloud with popular tags</li>
+								            	<li><b>Blog Product Related Posts</b> - display list of articles in product detail page</li>
+								            	<li><b>Blog Search</b> - display form, that let users search articles, which they interested in</li>
+								            </ul>
+								            <h5><br><strong>Blog enable seo</strong></h5>
+								            <p>If you want to use seo links you have to modify this file:</p>
+								            <p>For OC 2.1.x - <b>catalog/controller/common/seo_url.php</b>. (modified content of this file: <a href="http://wklej.org/id/2997382/" target="_blank">See code</a>)</p>
+								            <p>For OC 2.2.x, 2.3.x - <b>catalog/controller/startup/seo_url.php</b>. (modified content of this file: <a href="http://wklej.org/id/2667831/" target="_blank">See code</a>)</p>
+								            <p><a href="https://www.youtube.com/watch?v=vgSzJnatqEk&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0&index=18" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="breadcrumbbackground">
+								    <h4>Breadcrumb background</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								        	<div class="row">
+								        		<div class="col-sm-6">
+								        			<p>This module allows you to create an interesting description of category and set an background image.</p>
+								        			<p>Content of the module used in the demo version is as fallows:</p>
+								        			<pre>&lt;div class="content" style="position:absolute;z-index:1;top:50%;<br>width:100%;text-align:center;"&gt;<br>&lt;h2 style="color: #fff;font-weight: 600;"&gt;CATEGORY <br>&lt;b style="font-weight: 800;"&gt;BANNER&lt;/b&gt;&lt;/h2&gt;<br>&lt;p style="color: #fff;font-weight: 300;"&gt;Set banners <br>and description for any category of your website.&lt;/p&gt;<br>&lt;/div&gt;</pre>
+								        		</div>
+								        		
+								        		<div class="col-sm-6">
+								        			<p><img class="doc-img" src="assets/images/image_11.png"></p>
+								        		</div>
+								        	</div>	
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="cameraslider">
+								    <h4>Camera slider</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <div class="row">
+								            	<div class="col-sm-6">
+								            		<p>Slider operates on the basis of the same rule as a standard opencart. You can add unlimited number of sliders, insert unlimited number of photo there and place every slider at any place on the webpage. To add a slider go to the bookmark Existing modules in the module Camera Slider. Then in the same bookmark press Create new slider button.</p>
+								            		<p>Complete the name, width and height of the slider and then decide whether slider is to be displayed within the whole width of the page or with the content of the page. Then press Add Slider button and upload the Picture. When you have a completed slider, press the save button. </p>
+								            		<p>In the Module placement bookmark you can place the sliders you have created at any part of the webpage. Press Add item and then choose slider, layout and the place you want the slider to be visible at. In sort order you have to type in a number higher or equal 0. The greater the number, the lower the slider will be displayed regarding the number of modules.</p>
+								            	</div>
+								            	
+								            	<div class="col-sm-6">
+								        			<p><img class="doc-img" src="assets/images/image_12.png"></p>
+								            	</div>
+								            </div>
+								            <p><a href="https://www.youtube.com/watch?v=ATNYgoukk-I&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0&index=6" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="cookie">
+								    <h4>Cookie</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>Cookie module allow you to create customized section, informing users about cookie policy.</p>
+								            <p>You can determine position where this block will be displayed (top, bottom), type text, customize background, borders, text color, layouts and so on.</p>
+								            <p><a href="https://www.youtube.com/watch?v=vRSrxWwzSwc&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0&index=7" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="custommodule">
+								    <h4>Custom Module</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>Custom module is helpful when you want to add any content (HTML) at any place on your site. To add a module press  Add Module button. You can decide if the module will be displayed in the Block form (heading + content) or in the HTML form, where you can type own html code.</p>
+								            <p><a href="https://www.youtube.com/watch?v=3ilIuW9v6So&index=8&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="filterproducts">
+								    <h4>Filter Products</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>Filter product module allow you display any type of products at any place on the site. After click on Add module button in the Module tab bookmark you can add bookmarks and then choose a type of products.</p>
+								            <p><a href="https://www.youtube.com/watch?v=asDdUqbsfXo&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0&index=9" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="faq">
+								    <h4>Faq</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>FAQ module give you a possibility to create question and answer pairs which they want displayed on the 'faq' page.</p>
+								            <p><a href="https://www.youtube.com/watch?v=rtSCFQrBnyE&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0&index=10" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="fullscreenbackgroundslider">
+								    <h4>Fullscreen background slider</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>This module works similarly to Camera slider. The only difference Is That this module displays in a background of entire page.</p>
+								            <p><a href="https://www.youtube.com/watch?v=vu8nDTPrHNs&index=11&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="megamenu">
+								    <h4>MegaMenu</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>This module allow you to create your own MegaMenu instead of default menu.</p>
+								            <p>Default position for MegaMenu is set for Menu but you can put this module also anywhere you want.</p>
+								            <h5><br><strong>Design configuration</strong></h5>
+								            <ul>
+								            	<li><strong>Orientation</strong> - Choose the style of Mega Menu.
+								            		<ul>
+								            			<li><strong>Vertical</strong> - will be displayed next to Slideshow (for example)</li>
+								            			<li><strong>Horizontal</strong> - will be displayed like in index2 skin in our theme. Of course you can change position of Mega Menu</li>
+								            		</ul>
+								            	</li>
+								            	<li><strong>Search bar</strong> - Display serach bar on the right side of Mega Menu</li>
+								            	<li><strong>Navigation text</strong> - Change name of this module in Vertical Orientation</li>
+								            	<li>
+								            		<strong>Expand menu bar Full Width</strong>
+								            		<ul>
+								            			<li>Yes - Menu is full width in content.</li>
+								            			<li>No - Menu is fixed in the content.</li>
+								            		</ul>
+								            	</li>
+								            	<li><strong>Home item</strong> - Select between Icon, Text or Disable Home button in menu.</li>
+								            </ul>
+								            <h5><br><strong>jQuery Animations</strong></h5>
+								            <p>Select animation style and time for MegaMenu.</p>
+								            <h5><br><strong>Item setting</strong></h5>
+								            <ul>
+								            	<li><strong>Name</strong> - Category name</li>
+								            	<li><strong>Description</strong> - Small text under Category name</li>
+								            	<li><strong>Icon</strong> - You can upload icon for category. Icon will be displayed before category name</li>
+								            	<li><strong>Link</strong> - Url to category</li>
+								            	<li><strong>Link in new window</strong> - Enable if you want to open url in new window.</li>
+								            	<li><strong>Position</strong> - Select where you want to have edited category should show. On left or right side.</li>
+								            	<li><strong>Submenu width</strong> - Width of submenu. You can use % of "px".</li>
+								            	<li><strong>Display menu on:</strong>
+								            		<ul>
+								            			<li>Hover - Default hover</li>
+								            			<li>Hover intent - Opened for few seconds after hover over</li>
+								            			<li>Click - Click to open submenu</li>
+								            		</ul>
+								            	</li>
+								            </ul>
+								            <h5><br><strong>Content item</strong></h5>
+								            <p>This fields are only for Subcategories.</p>
+								            <ul>
+								            	<li><strong>Content width</strong> - width of edited subcategory. 12 is full width 3/12 = 1/4</li>
+								            	<li><strong>Content type</strong> - choose what kind of content will be in this subcategory</li>
+								            </ul>
+								            <p><br><a href="https://www.youtube.com/watch?v=fDe5vB3zj1s&t=3s&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0&index=12" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="headernotice">
+								    <h4>Header Notice</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>Header notice is simple and very handy module that allows you to create notice, which will be displayed for users in a header section. It offer a lot of configuration options, which let you customize appearance in many ways.</p>
+								            <p><a href="https://www.youtube.com/watch?v=C-dybvxQTbU&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0&index=13" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="productblocks">
+								    <h4>Product Blocks</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>This module allows you to add custom content of html on product page in 7 different positions. When you set the type to request you can also change the "add to cart" button to "request of product" button.</p>
+								            <p><a href="https://www.youtube.com/watch?v=qqkc4OfoINc&index=14&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="popup">
+								    <h4>Popup</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">	
+								            <div class="row">
+								            	<div class="col-sm-6">
+								            		<p>Popup Module allow you to create 3 types of popup:</p>
+								            		<ul>
+								            			<li><strong>Newsletter</strong> - generate form which allow users to subscribe to your newsletter</li>
+								            			<li><strong>Custom</strong> - optional content, you can type here whatever you want</li>
+								            			<li><strong>Contact Form</strong> - generate form, which allow users to contact you via e-mail</li>
+								            		</ul>
+								            		<p><strong>Type:</strong> You can select type of newsletter. You have three choices (newsletter, custom, contact form).</p>
+								            		<p><strong>Newsletter Popup Title:</strong> The title of newsletter popup.</p>
+								            		<p><strong>Newsletter Popup Text:</strong> Optional text to accompany the email input field.</p>
+								            		<p><strong>Newsletter Input Placeholder:</strong> Placeholder text that appears inside the input field.</p>
+								            		<p><strong>Newsletter Subscribe Button Text:</strong> The subscribe button text.</p>
+								            		<p><strong>Custom Popup Title:</strong> The title of custom popup.</p>
+								            		<p><strong>Custom Popup Text:</strong> The content of custom popup.</p>
+								            		<p><strong>Contact Form Popup Title:</strong> The title of contact form popup.</p>
+								            		<p><strong>Show after:</strong> You can set time after popup will be showed.</p>
+								            		<p><strong>Auto close after:</strong> You can set time after popup will be autoclosed.</p>
+								            		<p><a href="https://www.youtube.com/watch?v=FGvOsxu5xYw&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0&index=15" target="_blank">Click here to see videotutorial for this module</a></p>
+								            	</div>
+								            	
+								            	<div class="col-sm-6">
+								            		<p><img class="doc-img" src="assets/images/image_13.png"></p>
+								            	</div>
+								            </div>	
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="productquestion">
+								    <h4>Product Question</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>Product Question module let you add a button in product detail page, which allow users to ask you about particular product. You can show this button in all products, only in chosen category or in selected individual products.</p>
+								            <p><a href="https://www.youtube.com/watch?v=qRXmAsjlww8&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0&index=16" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+								
+								<div id="producttabs">
+								    <h4>Product Tabs</h4>
+								    <div class="sub-sub-content">
+								        <div class="content-body">
+								            <p>This module enable the creation of unlimited number of bookmarks on the product webpage. Go to editing the module and press Add Tab button. Choose if you want the bookmark to be displayed on all products or Only on a chosen product. Type a product name in the Product Name field to select it from your catalog. Proceed to add any custom html content to that particular tab.</p>
+								            <p><a href="https://www.youtube.com/watch?v=dOWE_V9hsMY&list=PL7fLWs14lBx3kBSaoxsoRfb9dgKLS37p0&index=17" target="_blank">Click here to see videotutorial for this module</a></p>
+								        </div>
+								    </div>
+								</div>
+                            </div>
+                        </div>
+                        <div id="compatibleextensions">
+                            <h3>Compatible Extensions</h3>
+                            <div class="sub-content">
+                                <div id="quickcheckout">
+                                    <h4>Quick Checkout</h4>
+                                    <div class="sub-sub-content">
+                                        <div class="content-body">
+                                            <p>This is a PAID Extension, you can purchase this extension and see its details <a href="https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=7382" target="_blank">here</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="megafilterpto">
+                                    <h4>Mega Filter PRO</h4>
+                                    <div class="sub-sub-content">
+                                        <div class="content-body">
+                                            <p>This is a PAID Extension, you can purchase this extension and see its details <a href="https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=19235" target="_blank">here</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="others">
+                    <h2>Others</h2>
+                    <div class="main-content">
+                        <div id="faq">
+                            <h3>Frequently Asked Questions</h3>
+                            <div class="sub-content">
+                                <div class="sub-sub-content">
+                                    <div class="content-body">
+                                        <ol>
+                                            <li>
+                                                <h6 class="text-primary">PROBLEM - Revolution Slider doesn’t work with OpenCart 2.3</h6>
+                                                <p>Unfortunately in OpenCart 2.3 there is ".htaccess" file in "system" folder which block revolution slider. You need to remove or change name.<br>We are also waiting for official Revolutsion Slider update and as soon as it will be available, we will update our theme also.</p>
+                                            </li>
+                                            <li>
+                                                <h6 class="text-primary">PROBLEM - First image on product page is smaller</h6>
+                                                <p>You need to change image size to bigger in OpenCart settings.
+                                                	<ul>
+                                                		<li>For OpenCart 2.1 system/settings/images/product_thumb</li>
+                                                		<li>For OpenCart 2.2, 2.3 extension/themes/product_thumb</li>
+                                                	</ul>
+                                                Settings in Porto Theme Options allow you to increase/decrease photo area to make better responsive version of your store. You still need to change image size to bigger in OpenCart settings.</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="supportcustomization">
+                            <h3>Support & Customization</h3>
+                            <div class="sub-content">
+                                <h4>Thanks for using Porto OpenCart Theme!</h4>
+                                <div class="sub-sub-content">
+                                    <div class="content-body">
+                                        <p>We would like to thank you for using Porto OpenCart Theme! We are very pleased you have chosen Porto eCommerce for your website, we always provide best support for our customers, you can confirm it from our <span class="text-primary">themeforest review rating - top 1 in themeforest</span>!</p>
+                                        <p>If you have any difficulities with Porto OpenCart Theme or need any additional service, do not hesitate to contact us. We provide 24/7 Support!</p>
+                                        <p>Regarding <span class="text-primary">presale questions and free support for theme usage</span>, please contact us through themeforest support page. We will provide you amazing one-by-one email support and you will get answers more faster than you expected. We also provide support in weekends, but may require some more hours than normal working days.</p>
+                                        <p>Regarding <span class="text-primary">customization service</span> based on our themes or other OpenCart related, please contact us to <a href="mailto:nicework125@gmail.com" target="_blank">nicework125@gmail.com</a>. We have an amazing team to provide customization service who have done bunch of customization projects so far, will provide you reasonable quote before start.</p>
+                                        <br/>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="widget-summary">
+                                                    <div class="widget-summary-col widget-summary-col-icon">
+                                                        <div class="summary-icon bg-primary">
+                                                            <i class="fa fa-life-ring"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-summary-col support-popup">
+                                                        <div class="summary">
+                                                            <h4 class="title">Free Support for Questions and Issues</h4>
+                                                            <h5><a href="http://themeforest.net/item/porto-ecommerce-ultimate-OpenCart-theme/9725864/support?ref=SW-THEMES" target="_blank" style="font-size: 24px; font-weight: 600;">Themeforest Support Page</a></h5>
+                                                        </div>
+                                                        <div class="summary-footer" style="color: #ccc;">(SW-THEMES)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="widget-summary" style="border-left-color: #e36159;">
+                                                    <div class="widget-summary-col widget-summary-col-icon">
+                                                        <div class="summary-icon" style="background-color: #e36159;">
+                                                            <i class="fa fa-usd"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-summary-col support-popup">
+                                                        <div class="summary">
+                                                            <h4 class="title">Customization Service(additional cost)</h4>
+                                                            <h5><a href="mailto:nicework125@gmail.com" target="_blank" style="font-size: 24px; font-weight: 600;">nicework125@gmail.com</a></h5>
+                                                        </div>
+                                                        <div class="summary-footer" style="color: #ccc;">(SW-THEMES)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="changelog">
+                            <h3>Change Log</h3>
+                            <div class="sub-content">
+                                <div class="sub-sub-content">
+                                    <div class="content-body">
+                                        <h6>Version 1.0.0 (01/01/2017)</h6>
+                                        <pre><code>Initialized</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer id="footer" class="footer-ribbon">
+            <div class="container">
+                <div class="footer-ribbon">
+                    <a href="javascript:void(0)">Get in Touch!</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="widget newsletter-widget">
+                            <h3 class="widget-title">Newsletter</h3>
+                            <form action="../../OpenCart/porto/index.php/demo10_en/newsletter/subscriber/new/">
+                                <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+                                <div class="form-wrapper">
+                                    <input type="email" name="email" title="Sign up for our newsletter" placeholder="Email Address">
+                                    <input type="submit" value="Go!">
+                                </div>
+                                
+                            </form>
+                        </div><!-- End .widget -->
+                    </div><!-- End .col-md-3 -->
+
+                    <div class="col-md-5">
+                        <div class="widget contact-info">
+                            <h3 class="widget-title">Contact Us</h3>
+                            <ul class="contact-details">
+                                <li>
+                                    <i class="fa fa-map-marker"></i> <strong>Address:</strong>  1234 Street Name, City Name, United States
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i> <strong>Phone:</strong>  (123) 456-7890
+                                </li> 
+                                <li>
+                                    <i class="fa fa-envelope"></i> <strong>Email:</strong>  <a href="mailto:swtheme@gmail.com">swtheme@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div><!-- End .widget -->
+                    </div><!-- End .col-md-3 -->
+
+                    <div class="col-md-2">
+                        <div class="widget newsletter-widget">
+                            <h3 class="widget-title">Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon icon-facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="https://twitter.com/eternalfriend38" target="_blank" class="social-icon icon-twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div><!-- End .widget -->
+                    </div><!-- End .col-md-3 -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+
+            <div id="footer-bottom">
+                <div class="container">
+
+                    <div class="footer-left">
+                        <span class="logo">
+                            <a href="index.html" title="Porto eCommerce Template">
+                                <img class="img-responsive" src="assets/images/logo_footer.png" alt="Porto eCommerce">
+                            </a>
+                        </span>
+                        <span class="copyright">&copy;Copyright 2016. All Rights Reserved.</span>
+                    </div><!-- End .footer-left -->
+
+                    <div class="footer-right">
+                           <ul class="footer-menu">
+                               <li>
+                                   <a href="#faq">FaQs</a>
+                               </li>
+                               <li>
+                                   <a href="http://themeforest.net/user/sw-themes?ref=ilistheme&from=selectpage" target="_blank">About Us</a>
+                               </li>
+                               <li>
+                                   <a href="http://themeforest.net/item/porto-ultimate-responsive-OpenCart-theme/9725864/support?ref=ilistheme&from=selectpage" target="_blank">Contact</a>
+                               </li>
+                           </ul>
+                    </div><!-- End .footer-right -->
+
+                </div><!-- End .container -->
+            </div><!-- End #footer-bottom -->
+        </footer>
+        <a href="javascript:void(0)" id="totop" title="Top" class="fixed"><i class="fa fa-chevron-up"></i></a>
+    </body>
+</html>
